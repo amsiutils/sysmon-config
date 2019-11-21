@@ -454,6 +454,7 @@
 
 		<!--DATA: UtcTime, SourceProcessGuid, SourceProcessId, SourceThreadId, SourceImage, TargetProcessGuid, TargetProcessId, TargetImage, GrantedAccess, CallTrace-->
 		<ProcessAccess onmatch="include">
+			<TargetImage condition="is">C:\Windows\system32\lsass.exe</TargetImage>
 		</ProcessAccess>
 
 	<!--SYSMON EVENT ID 11 : FILE CREATED [FileCreate]-->
